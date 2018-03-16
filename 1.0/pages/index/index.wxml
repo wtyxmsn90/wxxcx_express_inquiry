@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+<view class='index_part_img'>
+<image class='index_img' src='/images/index.jpg'></image>
+</view>
+<view class="input_view" style="background-color:#ffffff">
+<input class="input_text" type="text" placeholder="请输入快递单号" placeholder-style="color:black" bindconfirm="btngetExpressInfo"></input>
+<image class='img_saoma' src='/images/icon/saoma.png'></image>
+<button class='btn_saoma' bindtap='getScanCode' plain='true' style='border: none;'></button>
+</view>
+<view class='find_history'>
+<!--快递查询历史  -->
+<!--<text class='index_history_text' style='text-align:left'>历史记录</text>-->
+</view>
+</view>

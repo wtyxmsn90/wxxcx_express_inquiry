@@ -1,0 +1,69 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.index_img {
+  width: 100%
+}
+
+.index_part_img{
+  width: 100%;
+  height: 100%;
+}
+
+.input_view{
+  margin-top: -150px;
+  border-top-left-radius:0.2em;
+  border-top-right-radius:0.2em;
+  border-bottom-right-radius:0.2em;
+  border-bottom-left-radius:0.2em;
+}
+
+.input_text{
+  width: 270px;
+  float: left;
+  border: none;
+  border-top-left-radius:0.2em;
+  border-top-right-radius:0.2em;
+  border-bottom-right-radius:0.2em;
+  border-bottom-left-radius:0.2em;
+}
+
+.img_saoma{
+  width: 25px;
+  height: 25px;
+  float: right;
+}
+
+.btn_saoma{
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-right: -25px;
+}
+
+.index_history_text{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  font-size: 13px;
+  color: #fff;
+}
