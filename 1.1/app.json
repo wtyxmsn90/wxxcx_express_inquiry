@@ -2,7 +2,9 @@
   "pages":[
     "pages/index/index",
     "pages/explist/explist",
-    "pages/mine/mine"
+    "pages/expcomlist/expcomlist",
+    "pages/mine/mine",
+    "pages/demo/demo"
   ],
   "window":{
     "backgroundTextStyle":"light",

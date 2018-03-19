@@ -11,3 +11,7 @@ background-color:#f0f0f0;
   justify-content: space-between;
   box-sizing: border-box;
 } 
+
+view {
+    font-family: "微软雅黑"
+}

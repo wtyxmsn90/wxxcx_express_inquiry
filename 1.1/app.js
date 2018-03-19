@@ -67,15 +67,14 @@ App({
           wx.showModal({
             title: '单号查不到物流信息',
             content: '是否手动选择快递公司',
-            success: function (res) {
-              if (res.confirm) {
+            success: function (res2) {
+              if (res2.confirm) {
                 console.log('用户点击确定')
-                wx.showToast({
-                  title: '功能还在开发中，即将上线',
-                  icon: 'none',
-                  duration: 2000
+                console.log(res.data.nu)
+                wx.navigateTo({
+                  url: '../demo/demo?&nu=' + res.data.nu,
                 })
-              } else if (res.cancel) {
+              } else if (res2.cancel) {
                 console.log('用户点击取消')
               }
             }
@@ -85,15 +84,14 @@ App({
           wx.showModal({
             title: '无法根据单号匹配公司',
             content: '是否手动选择快递公司',
-            success: function (res) {
-              if (res.confirm) {
+            success: function (res2) {
+              if (res2.confirm) {
                 console.log('用户点击确定')
-                wx.showToast({
-                  title: '功能还在开发中，即将上线',
-                  icon: 'none',
-                  duration: 2000
+                console.log(res.data.nu)
+                wx.navigateTo({
+                  url: '../demo/demo?&nu=' + res.data.nu,
                 })
-              } else if (res.cancel) {
+              } else if (res2.cancel) {
                 console.log('用户点击取消')
               }
             }
@@ -114,6 +112,69 @@ App({
           })
         }
         else{
+          cb(res.data)
+        }
+      }
+    })
+  },
+  getcomExpressInfo: function (nu,com,cb) {
+    wx.request({
+      url: 'http://aliapi.kuaidi.com/kuaidiinfo?&order=desc&muti=0&nu=' + nu+'&com='+com,
+      data: {
+      },
+      header: {
+        Authorization: 'APPCODE 43bc3e62b7b745d9a92549df884c8a28'
+      },
+      success: function (res) {
+        if (res.data.errNum == '300404') {
+          wx.showModal({
+            title: '单号查不到物流信息',
+            content: '是否手动选择快递公司',
+            success: function (res2) {
+              if (res2.confirm) {
+                console.log('用户点击确定')
+                console.log(res.data.nu)
+                wx.navigateTo({
+                  url: '../demo/demo?&nu=' + res.data.nu,
+                })
+              } else if (res2.cancel) {
+                console.log('用户点击取消')
+              }
+            }
+          })
+        }
+        else if (res.data.errNum == '300403') {
+          wx.showModal({
+            title: '无法根据单号匹配公司',
+            content: '是否手动选择快递公司',
+            success: function (res2) {
+              if (res2.confirm) {
+                console.log('用户点击确定')
+                console.log(res.data.nu)
+                wx.navigateTo({
+                  url: '../demo/demo?&nu=' + res.data.nu,
+                })
+              } else if (res2.cancel) {
+                console.log('用户点击取消')
+              }
+            }
+          })
+        }
+        else if (res.data.errNum == '300402') {
+          wx.showToast({
+            title: '请输入快递单号',
+            icon: 'none',
+            duration: 2000
+          })
+        }
+        else if (res.data.errNum == '300401') {
+          wx.showToast({
+            title: '快递网授权码无效，请联系客服',
+            icon: 'none',
+            duration: 2000
+          })
+        }
+        else {
           cb(res.data)
         }
       }
