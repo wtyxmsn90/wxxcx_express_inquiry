@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/explist/explist",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3278e6",
+    "navigationBarTitleText": "快递查询小工具",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "查询",
+      "iconPath": "images/icon/express.png",
+      "selectedIconPath": "images/icon/express-blue.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "images/icon/mine.png",
+      "selectedIconPath": "images/icon/mine-blue.png"
+    }]
+  }
+}

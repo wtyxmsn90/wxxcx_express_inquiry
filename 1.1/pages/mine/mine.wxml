@@ -1,0 +1,33 @@
+<!--pages/mine/mine.wxml-->
+<view class='mine_user'>
+<!--个人详情头部：头像与欢迎信息-->
+<view class='user_top'>
+<image class='user_pic' src='{{userInfo.avatarUrl}}'></image>
+<view class='user_top_text'>
+<text class='user_name'>{{userInfo.nickName}}</text>
+<text class='welcome_text'>欢迎使用快递查询小工具</text>
+</view>
+</view>
+<!--个人详情菜单：查件记录，消息中心，意见反馈-->
+
+<view style='clear:both'>
+<!--查件记录-->
+<view class='user_list_bg'>
+<image class='list_icon' src='/images/icon/find.png'></image>
+<text class='user_list_lf'>查件记录</text>
+<image class='user_list_rg' src='/images/icon/next.png'></image>
+</view>
+<!--消息中心-->
+<view class='user_list_bg'>
+<image class='list_icon' src='/images/icon/message.png'></image>
+<text class='user_list_lf'>消息中心</text>
+<image class='user_list_rg' src='/images/icon/next.png'></image>
+</view>
+<!--意见反馈-->
+<view class='user_list_bg'>
+<image class='list_icon' src='/images/icon/fankui.png'></image>
+<text class='user_list_lf'>意见反馈</text>
+<image class='user_list_rg' src='/images/icon/next.png'></image>
+</view>
+</view>
+</view>

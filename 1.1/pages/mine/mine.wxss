@@ -1,0 +1,84 @@
+/* pages/mine/mine.wxss */
+/* 头部 */
+.user_top{
+  width: 100%;
+  height: 100px;
+  background-color: #3278e6;
+}
+.user_pic{
+  float: left;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.user_top_text{
+  padding-top: 20px;
+
+}
+
+.user_name{
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.welcome_text{
+  padding-left: 10px;
+  color: #dbdbdb;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 菜单栏 */
+.list_icon{
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 4px 2px 0 10px;
+}
+
+.user_list_bg{
+  height: 40px;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.user_list_lf{
+  font-size: 18px;
+  padding: 6px 0px 0px 5px;
+  float: left;
+}
+
+.user_list_rg{
+  width: 30px;
+  height: 30px;
+  padding: 4px 2px 0 10px;
+  float: right;
+}
+
+.list_btn{
+  height: 40px;
+  width: 100%;
+}
