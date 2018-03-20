@@ -1,0 +1,100 @@
+/* pages/explist/explist.wxss */
+.explist-company{
+  height: 130px;
+  width: 100%;
+  background-color: #3278e6;
+}
+
+.img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+}
+
+.expinfo_com{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  padding-top: 60px;
+  color: #fff;
+}
+
+.explist-list{
+  padding-top: 15px;
+}
+.expinfo_num_size{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  padding-top: 5px;
+  color: #e0e0e0;
+}
+
+.explist-size{
+  position: relative;
+  padding-left: 20px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.line{
+width: 1px;
+height: 100%;
+background-color: #999;
+position: absolute;
+left: 21px;
+z-index: -1;
+}
+.explist-content{
+   width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  font-size: 13px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  line-height: 30px;
+  background: url(http://www.swdwiki.com/about4_icon.png) left center no-repeat;
+}
+
+.explist-time{
+   width: 100%;
+  display: flex;
+  justify-content: left;
+  font-size: 12px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  color: #ABABAB;
+}
+
+.explist-err{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ABABAB;
+}
+
+.explistcom-err{
+  font-size:14px;
+  margin-bottom:10px;
+  color:#000;
+  float:right;
+  margin-top:-65px;
+  border: 0px;
+}
+
+.expinfo_err_img{
+  width: 14px;
+  height: 14px;
+  padding-left: 5px;
+  margin-top: 2px;
+}

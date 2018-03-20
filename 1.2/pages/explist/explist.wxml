@@ -1,0 +1,24 @@
+<!--pages/explist/explist.wxml-->
+<view class='explist'>
+<!--快递详情头部：快递公司头像-->
+<view class='explist-company'>
+<image src='{{expressInfoPic}}' class='img'></image>
+<text class='expinfo_com' style='text-align:center;'>{{expressInfocom}}</text>
+<text class='expinfo_num_size' style='text-align:center;'>{{expressInfonum}}</text>
+<button class='explistcom-err' plain="true" style='border:0px' bindtap='secleteCom'>公司有误?<image class='expinfo_err_img' src='/images/icon/next.png'></image></button>
+<!--<image src='{{expressInfoPic}}' class='img'></image>-->
+<!--<text class='expinfo_nu'>快递单号：{{expressInfonum}}</text>-->
+<!--<text>快递公司：{{expressInfocom}}</text>-->
+</view>
+<!--快递详情：快递详情部分-->
+<view class='explist-list'>
+<view wx:if="{{expressError=='300404'||expressError=='300403'}}"><text class='explist-err'>快递信息可能尚未录入系统，或者单号已经过期。</text></view>
+<view wx:else>
+<view wx:for="{{expressInfo}}" class='explist-size'>
+</view>
+<view class='line'></view>
+<text class='explist-content'>{{item.context}}</text>
+<text class='explist-time'>{{item.time}}</text>
+</view>
+</view>
+</view>
